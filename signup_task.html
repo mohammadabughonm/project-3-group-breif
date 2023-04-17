@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Fonts */
+        
+        
+        
+        /* Simple Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        /* body */
+        body {
+          background-image: url("imgs/background.png");
+          background-size:cover;
+          font: 400 87.5%/1.5em 'Open Sans', sans-serif;
+        }
+        
+        /* Form Layout */
+        .form-wrapper {
+          background: #fafafa;
+          margin: 3em auto;
+          padding: 0 1em;
+          max-width: 370px;
+        }
+        
+        h1 {
+          text-align: center;
+          padding: 1em 0;
+        }
+        
+        form {
+          padding: 0 1.5em;
+
+        }
+        
+        .form-item {
+          margin-bottom: 0.75em;
+          width: 100%;
+        }
+        
+        .form-item input {
+          background: #fafafa;
+          border: none;
+          border-bottom: 2px solid #e9e9e9;
+          color: #666;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 1em;
+          height: 50px;
+          transition: border-color 0.3s;
+          width: 100%;
+        }
+        
+        .form-item input:focus {
+          border-bottom: 2px solid #c0c0c0;
+          outline: none;
+        }
+        
+        .button-panel {
+          margin: 2em 0 0;
+          width: 100%;
+        }
+        #Sign_up{
+          background-color: rgb(252, 192, 81);
+          color: white;
+          font-weight: bold;
+        }
+        
+        #Sign_up:hover {
+          background-color: #c26170;
+          color: #ffffff;
+        }
+        
+        .form-footer {
+          font-size: 1em;
+          padding: 2em 0;
+          text-align: center;
+        }
+        
+        .form-footer a {
+          color: white;
+          text-decoration: none;
+          transition: border-color 0.3s;
+        }
+        
+        .form-footer a:hover {
+          border-bottom: 1px dotted #8c8c8c;
+        }
+        .form-check-input{
+            width: 5px;
+            height: 10px;
+        }
+        .signBtn {
+          width: 140px;
+          height: 40px;
+          margin-top: 20px;
+          border: none;
+          border-radius: 45%;
+          background-color: rgb(252, 192, 81);
+          font-weight: bold;
+        }
+        signUpHex{
+          width: 0;
+          border-bottom: 30px solid #6C6;
+          border-left: 52px solid transparent;
+          border-right: 52px solid transparent;
+
+          width: 104px;
+          height: 60px;
+          background-color: #6C6;
+
+          width: 0;
+          border-top: 30px solid #6C6;
+          border-left: 52px solid transparent;
+          border-right: 52px solid transparent;
+
+        }
+      </style>
+
+</head>
+<body>
+
+    <div class="signUpHex">
+      <form class="form-wrapper" action="" name="form1" id="form_1" onsubmit="validateForm()" >
+      <div class="form-item">
+        <label for="text"></label>
+        <input type="text" name="username" id="username"required="required" placeholder="username" value=""/>
+        <div style="display: block" id="name_error"> </div>
+        <small>eg:username </small>
+      </div>
+      <div class="form-item">
+        <label for="email"></label>
+        <input type="email" name="email" id="email" required="required" placeholder="Email Address" value="">
+        <div style="display: block" id="email_error"> </div>
+        <small>eg: username@domain.com </small>
+      </div>
+      <div class="form-item">
+        <label for="password"></label>
+        <input type="password" name="password" id="password" required="required" placeholder="Password" value="">
+        <div style="display: block" id="password_error"></div>
+        <small>The Password should be between 6-18 characters.</small> 
+      </div>
+      <div class="form-item">
+        <label for="confirmpassword"></label>
+        <input type="password" name="password" id="password_confirm" required="required" placeholder="confirmPassword" value="">
+        <div  style="display: block;" id="password_confirm_error"></div>
+        <small>The repeat password should same of password.</small>
+      </div>
+      <div class="form-item">
+        <div>
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label " for="flexCheckDefault">
+            I agree to the terms 
+          </label>
+          <div id="check_error"></div>
+        </div>
+        <input class="button" title="Sign up" type="submit" value="Submit" id="Sign_up">
+      </div>
+    </form>
+    </div>
+    <div class="form-footer">
+      <button class="signBtn"><a href="sign-task.html">signIn</a></button>
+    </div>
+    
+    <!-- script -->
+  <script src="signup_task.js">
+    </script>
+</body>
+</html>

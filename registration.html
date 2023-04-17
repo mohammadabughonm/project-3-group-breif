@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="RegistrationContainer">
+        <!-- Animation -->
+        <div class="bubbles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!-- End of animation -->
+
+        <!-- navbar -->
+        <header class="d-flex flex-wrap justify-content-center py-1 mb-2 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-4"><img src="imgs/logo-no-background.png"></span>
+            </a>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+            </ul>
+        </header>
+
+        <!-- Register Form -->
+        <div class="form" onsubmit="StoreData()">
+            <form class="form-wrapper" action="" name="form1" id="form_1" onsubmit="validateForm()" >
+                <div class="form-item">
+                    <label for="text"></label>
+                    <input type="text" name="username" id="username"required="required" placeholder="username" value=""/>
+                    <div style="display: block" id="name_error"> </div>
+                    <small>eg:username </small>
+                </div>
+                <div class="form-item">
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" required="required" placeholder="Email Address" value="">
+                    <div style="display: block" id="email_error"> </div>
+                    <small>eg: username@domain.com </small>
+                </div>
+                <div class="form-item">
+                    <label for="password"></label>
+                    <input type="password" name="password" id="password" required="required" placeholder="Password" value="">
+                    <div style="display: block" id="password_error"></div>
+                    <small>Create strong password</small> 
+                </div>
+                <div class="form-item">
+                    <label for="confirmpassword"></label>
+                    <input type="password" name="password" id="password_confirm" required="required" placeholder="confirmPassword" value="">
+                    <div  style="display: block;" id="password_confirm_error"></div>
+                    <small>The confirmed password should same of password.</small>
+                </div>
+                <div class="form-item">
+                    <div id="completedMessage" style="display: block" ></div>
+                    <input class="button" title="Sign up" type="submit" value="Submit" id="Sign_up">
+                </div>
+            </form>
+        </div>
+        <div class="form-footer">
+            <button class="signBtn"><a href="signIn.html">signIn</a> </button>
+        </div>
+        
+        
+    </div>
+    <footer >
+        <p>Privacy Policy| Terms and Conditions | Copyright © 2023. All Rights Reserved.</p>
+    </footer>
+    <!-- script -->
+<script src="js/signup.js">
+</script>
+<script src="js/sweet.js"></script>
+</body>
+</html>
